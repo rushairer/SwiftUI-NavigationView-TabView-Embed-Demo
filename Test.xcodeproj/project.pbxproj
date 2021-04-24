@@ -15,6 +15,8 @@
 		C7991B3C2633D4C400704952 /* Test.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C7991B3A2633D4C400704952 /* Test.xcdatamodeld */; };
 		C7991B472633D4C400704952 /* TestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7991B462633D4C400704952 /* TestTests.swift */; };
 		C7991B522633D4C400704952 /* TestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7991B512633D4C400704952 /* TestUITests.swift */; };
+		C7991B602634221A00704952 /* ContentViewOld.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7991B5F2634221A00704952 /* ContentViewOld.swift */; };
+		C7991B6226348A1F00704952 /* ContentViewTemp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7991B6126348A1F00704952 /* ContentViewTemp.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		C7991B4D2633D4C400704952 /* TestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7991B512633D4C400704952 /* TestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestUITests.swift; sourceTree = "<group>"; };
 		C7991B532633D4C400704952 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C7991B5F2634221A00704952 /* ContentViewOld.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewOld.swift; sourceTree = "<group>"; };
+		C7991B6126348A1F00704952 /* ContentViewTemp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewTemp.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +105,8 @@
 			children = (
 				C7991B2F2633D4C200704952 /* TestApp.swift */,
 				C7991B312633D4C200704952 /* ContentView.swift */,
+				C7991B6126348A1F00704952 /* ContentViewTemp.swift */,
+				C7991B5F2634221A00704952 /* ContentViewOld.swift */,
 				C7991B332633D4C400704952 /* Assets.xcassets */,
 				C7991B382633D4C400704952 /* Persistence.swift */,
 				C7991B3D2633D4C400704952 /* Info.plist */,
@@ -265,9 +271,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C7991B6226348A1F00704952 /* ContentViewTemp.swift in Sources */,
 				C7991B392633D4C400704952 /* Persistence.swift in Sources */,
 				C7991B3C2633D4C400704952 /* Test.xcdatamodeld in Sources */,
 				C7991B322633D4C200704952 /* ContentView.swift in Sources */,
+				C7991B602634221A00704952 /* ContentViewOld.swift in Sources */,
 				C7991B302633D4C200704952 /* TestApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

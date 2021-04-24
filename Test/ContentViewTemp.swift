@@ -1,44 +1,31 @@
 //
-//  ContentView.swift
+//  ContentViewTemp.swift
 //  Test
 //
-//  Created by Abenx on 2021/4/24.
+//  Created by Abenx on 2021/4/25.
 //
 
 import SwiftUI
-import CoreData
 
-struct ContentView: View {    
-    @State var tabTag: TabTag = .tab1
-    
-    enum TabTag: Int {
-        case tab1 = 1
-        case tab2 = 2
-        
-        var title: String {
-            switch self {
-            case .tab1: return "Tab1 Title"
-            case .tab2: return "Tab2 Title"
-            }
-        }
-    }
+struct ContentViewTemp: View {
+    @State var tabTag = 1
     
     var body: some View {
         NavigationView {
             TabView(selection: $tabTag) {
                 List {
+                    
                     NavigationLink(
                         destination: Text("Tab Content 1"),
                         label: {
                             Text("Tab Content 1")
                         })
                 }
-                .navigationTitle("")
-                .tabItem {
-                    Text("Tab Label 1")
-                }.tag(TabTag.tab1)
+                .navigationTitle("Tab1")
+                .tabItem { Text("Tab Label 1") }.tag(1)
                 
                 List {
+                    
                     NavigationLink(
                         destination: Text("Tab Content 2"),
                         label: {
@@ -46,18 +33,14 @@ struct ContentView: View {
                         })
                 }
                 .navigationTitle("Tab2")
-                .tabItem {
-                    Text("Tab Label 2")
-                }.tag(TabTag.tab2)
+                .tabItem { Text("Tab Label 2") }.tag(2)
             }
-            .navigationTitle("\(tabTag.title)")
         }
     }
-    
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct ContentViewTemp_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        ContentViewTemp()
     }
 }
